@@ -1,0 +1,207 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgb(219, 203, 181);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    position: relative;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    overflow: hidden;
+    border: 10px solid black;
+    box-shadow: inset 10px 10px 10px rgba(0,0,0,0.2), 10px 10px 10px rgba(0,0,0,0.2);
+}
+.wrapper {
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: inherit;
+}
+.button {
+  position: absolute;
+  width: 25px;
+  height: 15px;
+  background-color: black;
+  border: none;
+  top: -10px;
+  left: 100px;
+}
+.secondbtn {
+  left: 135px;
+  
+}
+.metal-holder {
+    position: relative;
+    width: 30px;
+    height: 80px;
+    background-color: transparent;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+    border-radius: 15px 0px 0px 15px;
+}
+.right {
+    border-radius: 0px 15px 15px 0px;
+}
+.glass-watch {
+    width: 200px;
+    height: 150px;
+    background-color: rgba(185, 99, 19, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: inherit;
+}
+p {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.rubber-buckle {
+    width: 280px;
+    height: 80px;
+    background-color: rgba(97, 50, 7, 0.945);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 10px 10px 10px rgba(185, 99, 19, 0.3);
+}
+.buckle-space {
+    width: 40px;
+    height: inherit;
+    background-color: rgb(219, 203, 181);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+    border-radius: 0px 5px 5px 0px;
+}
+.buckle {
+    width: 30px;
+    height: 8px;
+    background-color: black;
+}
+.rubber-holder {
+    width: 50px;
+    height: inherit;
+    background-color: black;
+    margin-left: 50px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opening {
+    width: 20px;
+    height: 40px;
+    background-color:  rgba(97, 50, 7, 0.945);
+}
+.rubber-button-hole {
+    width: 400px;
+    height: 80px;
+    background-color:  rgba(97, 50, 7, 0.945);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 45% 45% 0px;
+    gap: 30px;
+    box-shadow: 10px 10px 10px rgba(185, 99, 19, 0.3);
+}
+span {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(219, 203, 181);
+}
+@media screen and (max-width: 700px) {
+    .container {
+        padding: 10px;
+        width: auto !important;
+        height: auto !important;
+        border-radius: 20px;
+        border: 5px solid black;
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2), 5px 5px 5px rgba(0,0,0,0.2);
+    }
+    .wrapper {
+        width: auto !important;
+        height: auto !important;
+    }
+    .button {
+        width: 12px;
+        height: 7px;
+        top: -5px;
+        left: 50px;
+    }
+    .secondbtn {
+        left: 68px;
+    }
+    .metal-holder {
+        width: 15px;
+        height: 40px;
+        border-top: 10px solid black;
+        border-bottom: 10px solid black;
+        border-radius: 7px 0px 0px 7px;
+    }
+    .right {
+        border-radius: 0px 7px 7px 0px;
+    }
+    .glass-watch {
+        width: 100px;
+        height: 70px;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .rubber-buckle {
+        width: 140px;
+        height: 40px;
+        box-shadow: 5px 5px 5px rgba(185, 99, 19, 0.3);
+    }
+    .buckle-space {
+        width: 20px;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+        border-left: 5px solid black;
+        border-radius: 0px 2.5px 2.5px 0px;
+    }
+    .buckle {
+        width: 15px;
+        height: 4px;
+    }
+    .rubber-holder {
+        width: 25px;
+        margin-left: 30px;
+        border-top: 5px solid black;
+        border-bottom: 5px solid black;
+    }
+    .opening {
+        width: 10px;
+        height: 20px;
+    }
+    .rubber-button-hole {
+        width: 200px;
+        height: 40px;
+        border-radius: 0px 45% 45% 0px;
+        gap: 18px;
+        box-shadow: 5px 5px 5px rgba(185, 99, 19, 0.3);
+    }
+    span {
+        width: 5px;
+        height: 5px;
+    }
+}
+

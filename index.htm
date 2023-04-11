@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Wirst Watch</title>
+</head>
+<body onload="time()">
+    
+    <div class="rubber-buckle">
+        <div class="buckle-space">
+            <div class="buckle"></div>
+        </div>
+        <div class="rubber-holder">
+          <div class="opening"></div>
+        </div>
+    </div>
+    
+    <div class="metal-holder"></div>
+    <div class="wrapper">
+      <div class="button"></div>
+      <div class="button secondbtn"></div>
+      <div class="container">
+        <div class="glass-watch">
+          <p class="time"></p>
+        </div>
+      </div>
+    </div>
+    <div class="metal-holder right"></div>
+    
+    <div class="rubber-button-hole">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <script>
+    
+    function time() {
+
+        let time_count = document.querySelector(".time");
+        let date = new Date();
+
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+        
+        hr = (hr < 10) ? "0" + hr : hr;
+        min = (min < 10) ? "0" + min : min;
+        sec = (sec < 10) ? "0" + sec : sec;
+        
+        if (hr >= 12) {
+          hr = hr - 12;
+        }
+        else {
+          hr = hr;
+        }
+
+        let watch = hr+":"+min+":"+sec;
+        time_count.innerHTML = watch;
+
+        min=setInterval(time, 1000);
+        
+    }
+    </script>
+</body>
+</html>
